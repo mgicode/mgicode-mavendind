@@ -5,3 +5,10 @@ docker run -d --name mavendind  10.1.12.61:5000/mavendind
 docker exec -it mavendind /bin/bash
 
 docker push  10.1.12.61:5000/mavendind
+
+
+docker tag 10.1.12.61:5000/mavendind registry.cn-hangzhou.aliyuncs.com/prk/mgicode-mavendind:1.0
+docker push registry.cn-hangzhou.aliyuncs.com/prk/mgicode-mavendind:1.0
+
+
+docker pull registry.cn-hangzhou.aliyuncs.com/prk/mgicode-mavendind:1.0

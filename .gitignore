@@ -1,2 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
-!/.idea/
+
+/.idea/mgicode-mavendind.iml
+/.idea/thriftCompiler.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/.idea/
