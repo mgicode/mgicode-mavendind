@@ -16,6 +16,13 @@ RUN curl -sSL https://get.docker.com/ | sh
 ADD ./wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
 
+RUN apt-get install -y   expect
+# Define additional metadata for our image.
+#ssh连接The authenticity of host can't be established
+RUN echo "StrictHostKeyChecking no" >>/etc/ssh/ssh_config
+RUN echo "UserKnownHostsFile /dev/null" >>/etc/ssh/ssh_config
+
+#epel-release  ansible
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
 CMD ["wrapdocker"]

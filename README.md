@@ -165,7 +165,13 @@ docker exec -it mavendind /bin/bash
  ```
 docker pull registry.cn-hangzhou.aliyuncs.com/prk/mgicode-mavendind:1.0
  ```
- 
+ 1.2版本中加了expect和
+ echo "StrictHostKeyChecking no" >>/etc/ssh/ssh_config
+ echo "UserKnownHostsFile /dev/null" >>/etc/ssh/ssh_config
+
+ ```
+ docker push registry.cn-hangzhou.aliyuncs.com/prk/mgicode-mavendind:1.2
+ ```
  ## 下一步工作
  
  目前其maven和docker分别是maven3.5,open-jdk1.8 和docker17.09，其操作系统采用是debian，
